@@ -13,16 +13,16 @@ if num <= 0:
     print ("It's not a positive number")
 
 #if the user put number 1, the while loop won't work. So I added this condition to make sure it's run 
-# elif num == 1:
-#     num = (num*3)+1 
-#     print (num, sep=" ", end=" ")
-#     while num != 1:
-#         if num % 2 != 0:
-#             num = (num*3)+1
-#             print (num, sep=" ", end=" ")
-#         else:
-#             num = int(num/2)
-#             print (num, sep=" ", end=" ")      
+elif num == 1:
+    num = (num*3)+1 
+    print (num, sep=" ", end=" ")
+    while num != 1:
+        if num % 2 != 0:
+            num = (num*3)+1
+            print (num, sep=" ", end=" ")
+        else:
+            num = int(num/2)
+            print (num, sep=" ", end=" ")      
 else: 
 # if num is even will do num*3+1, if it's odd will do /2 and this loop will run until num is equal to 1.
     while num != 1:
@@ -34,20 +34,20 @@ else:
             print (num, sep=" ", end=" ")        
 
 
-# The original code I made 
+# The original code I made (without condition about input:1)
 
-num1 = int(input ("please enter a positive integer: "))
+# num1 = int(input ("please enter a positive integer: "))
 
-if num1 <= 0:
-    print ("It's not a positive number")       
-else: 
-        while num1 != 1:
-            if num1 % 2 != 0:
-                num1 = (num1*3)+1
-                print (num1, sep=" ", end=" ")
-            else:
-                num1 = int(num1/2)
-                print (num1, sep=" ", end=" ")        
+# if num1 <= 0:
+#     print ("It's not a positive number")       
+# else: 
+#         while num1 != 1:
+#             if num1 % 2 != 0:
+#                 num1 = (num1*3)+1
+#                 print (num1, sep=" ", end=" ")
+#             else:
+#                 num1 = int(num1/2)
+#                 print (num1, sep=" ", end=" ")        
 
 
 # below is some cod I have tried. I thought while the num is equal to 1, it'll running but it was my misunderstanding.
